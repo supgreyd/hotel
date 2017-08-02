@@ -1,0 +1,60 @@
+.accomodation
+  height: 350px
+  position: relative
+
+  .block_15
+    background-image: url(../img/2.jpg)
+    @extend %background
+
+  .block_35
+    text-align: center
+    padding: 50px 0
+
+    .logo
+      @extend %logo_black
+
+    h2
+      @extend %title_md
+      margin-bottom: 5px
+
+    h3
+      @extend %title_lg
+      margin-bottom: 10px
+
+    p
+      @extend %text
+
+
+  .block_50
+    background: url(../img/3.jpg) center center no-repeat
+    background-size: cover
+    z-index: 0
+
+    &:before
+      @extend %dark_filter
+
+@media (max-width: 992px)
+  .accomodation
+    height: 100%
+
+    .block_15
+      display: none
+
+    .block_35
+      position: relative
+      width: 100%
+
+      .logo
+        background-image: url(../img/logo-white.png)
+
+      h3, h2, p
+        color: $secodary
+
+    .block_50
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      z-index: -1
+
+

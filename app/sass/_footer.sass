@@ -1,0 +1,94 @@
+footer
+  height: 500px
+  text-align: center
+
+  .footer__contacts
+    padding-top: 80px
+    background-image: url(../img/10.jpg)
+    @extend %background
+    position: relative
+    filter: grayscale(50%)
+    z-index: 0
+
+    &:before
+      @extend %dark_filter
+
+
+    .logo
+      @extend %logo_white
+      height: 115px
+      width: 115px
+      display: inline-block
+      vertical-align: top
+      margin: 0 50px
+
+
+    span
+      @extend %title_sm
+      display: inline-block
+      color: $secodary
+      text-align: left
+      margin: 0 50px
+
+      a
+        color: inherit
+        display: inline-block
+        transform: translateY(35px)
+
+    ul
+      @extend %center
+      bottom: 70px
+      top: unset
+
+    li
+      display: inline-block
+
+      a
+        font-size: 16px
+        color: $secodary
+        display: inline-block
+        margin: 0 7px
+
+  .footer__credit
+    text-align: center
+    padding-top: 80px
+
+    p
+      @extend %text
+      font-size: 18px
+      max-width: 70%
+      text-align: left
+      display: block
+      margin-right: auto
+      margin-left: auto
+      position: relative
+
+      &:before,
+      &:after
+        content: '\201C'
+        font-size: 72px
+        position: absolute
+
+      &:before
+        top: -65px
+        left: 50%
+
+      &:after
+        transform: rotate(180deg)
+        right: 50%
+
+    img
+      margin-top: 100px
+      margin-left: 20px
+      margin-right: 20px
+
+    span
+      @extend %text
+      margin-top: 60px
+
+  @media (max-width: 768px)
+    .block_50
+      width: 100%
+
+    .footer__credit
+      height: initial

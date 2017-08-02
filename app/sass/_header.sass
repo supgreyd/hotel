@@ -1,0 +1,143 @@
+
+header
+  position: relative
+  text-align: center
+
+  .header__menu
+    position: fixed
+    display: block
+    width: 100%
+    left: 50%
+    transform: translateX(-50%)
+    z-index: 22
+    background-color: rgba($button, 0)
+    transition: background-color .5s
+
+    a
+      @extend %title_sm
+      color: $secodary
+      padding: 13px
+      margin: 70px 25px
+      display: inline-block
+      transition: .5s
+
+      &:hover
+        opacity: .7
+
+  .scroll_header
+    position: fixed
+    background-color: rgba($button, 0.7)
+
+    a
+      margin-top: 0
+      margin-bottom: 0
+
+  .header__promo
+    background-image: url(../img/header.jpg)
+    @extend %background
+    height: 800px
+    padding-top: 200px
+    padding-bottom: 150px
+    position: relative
+
+    &:before
+      @extend %dark_filter
+      z-index: 0
+
+    .logo
+      position: relative
+      @extend %logo_white
+      height: 284px
+      width: 284px
+      margin-bottom: 55px
+
+    p
+      position: relative
+      font-size: 24px
+      color: $secodary
+      line-height: 1.3
+      max-width: 965px
+      display: inline-block
+      padding: 0 20px
+
+  @media(max-width: 992px)
+    .header__menu
+      margin-top: 0
+      display: none
+
+      a
+        display: block
+        background-color: rgba($button, 0.7)
+        margin: 0
+
+.header__menu_background
+  position: fixed
+  width: 100%
+  height: 100px
+  background-color: rgba($button, 0.7)
+  z-index: 22
+  visibility: hidden
+
+.header__logo
+  position: fixed
+  z-index: 23
+  height: 60px
+  width: 60px
+  top: 25px
+  left: 35px
+  background-image: url(../img/logo-white.png)
+  @extend %background
+  visibility: hidden
+
+.hamburger
+  position: fixed
+  z-index: 23
+  height: 45px
+  width: 60px
+  right: 35px
+  top: 35px
+  visibility: hidden
+
+  i
+    width: 100%
+    height: 3px
+    position: absolute
+    left: 0
+    background-color: $secodary
+    transition: .5S
+
+  i:nth-last-child(1)
+    top: 0
+
+  i:nth-last-child(2)
+    top: 18px
+
+  i:nth-last-child(3)
+    top: 36px
+
+.active
+  i:nth-last-child(1)
+    transform: rotate(45deg)
+    top: 18px
+
+  i:nth-last-child(2)
+    opacity: 0
+
+  i:nth-last-child(3)
+    transform: rotate(-45deg)
+    top: 18px
+
+@media(max-width: 992px)
+  header .header__promo
+    height: 100%
+
+  .header__menu_background,
+  .hamburger,
+  .header__logo
+    visibility: visible
+
+@media (max-width: 300px)
+  header .header__promo .logo
+    height: 250px
+    width: 250px
+

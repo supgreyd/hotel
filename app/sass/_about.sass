@@ -1,0 +1,47 @@
+.about
+  height: 400px
+  position: relative
+
+.about__img
+  background-image: url(../img/1.jpg)
+  @extend %background
+  z-index: 0
+
+  &:before
+    @extend %dark_filter
+
+.about__text
+  padding: 50px 0
+  text-align: center
+
+  .logo
+    @extend %logo_black
+
+  h2
+    @extend %title_lg
+    margin-bottom: 10px
+
+  p
+    @extend %text
+
+@media (max-width: 992px)
+  .about
+    height: 100%
+
+    .block_50
+      width: 100%
+
+    article
+      position: relative
+
+      .logo
+        background-image: url(../img/logo-white.png)
+
+      p, h2
+        color: $secodary
+
+    .about__img
+      position: absolute
+      height: 100%
+
+
