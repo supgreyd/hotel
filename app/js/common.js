@@ -23,6 +23,8 @@ $(document).ready(function(){
     $('body,html').animate({scrollTop: top}, 1500);
   });
 
+  // var animateName = "animation shake";
+
 });
 
 // Больше кнопки, больше отступы между заголовками. затемнить картинки
