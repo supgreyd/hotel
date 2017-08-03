@@ -41,7 +41,7 @@ header .header__menu a, .service .block_60 h3, footer .footer__contacts span {
   max-width: 70%; }
 
 header .header__promo .logo, .contact .block_25 .content .logo, .bottom .logo, footer .footer__contacts .logo {
-  background-image: url(../img/logo-white.png);
+  background-image: url(../app/img/logo-white.png);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
@@ -51,7 +51,7 @@ header .header__promo .logo, .contact .block_25 .content .logo, .bottom .logo, f
   width: 91px; }
 
 .about__text .logo, .accomodation .block_35 .logo, .service .block_60 .logo {
-  background-image: url(../img/logo-black.png);
+  background-image: url(../app/img/logo-black.png);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
@@ -132,7 +132,7 @@ header {
       margin-top: 0;
       margin-bottom: 0; }
   header .header__promo {
-    background-image: url(../img/header.jpg);
+    background-image: url(../app/img/header.jpg);
     height: 800px;
     padding-top: 200px;
     padding-bottom: 150px;
@@ -176,7 +176,7 @@ header {
   width: 60px;
   top: 25px;
   left: 35px;
-  background-image: url(../img/logo-white.png);
+  background-image: url(../app/img/logo-white.png);
   visibility: hidden; }
 
 .hamburger {
@@ -236,7 +236,7 @@ header {
   position: relative; }
 
 .about__img {
-  background-image: url(../img/1.jpg);
+  background-image: url(../app/img/1.jpg);
   z-index: 0; }
 
 .about__text {
@@ -253,7 +253,7 @@ header {
     .about article {
       position: relative; }
       .about article .logo {
-        background-image: url(../img/logo-white.png); }
+        background-image: url(../app/img/logo-white.png); }
       .about article p, .about article h2 {
         color: #fff; }
     .about .about__img {
@@ -264,7 +264,7 @@ header {
   height: 350px;
   position: relative; }
   .accomodation .block_15 {
-    background-image: url(../img/2.jpg); }
+    background-image: url(../app/img/2.jpg); }
   .accomodation .block_35 {
     text-align: center;
     padding: 50px 0; }
@@ -273,7 +273,7 @@ header {
     .accomodation .block_35 h3 {
       margin-bottom: 10px; }
   .accomodation .block_50 {
-    background: url(../img/3.jpg) center center no-repeat;
+    background: url(../app/img/3.jpg) center center no-repeat;
     -webkit-background-size: cover;
             background-size: cover;
     z-index: 0; }
@@ -287,7 +287,7 @@ header {
       position: relative;
       width: 100%; }
       .accomodation .block_35 .logo {
-        background-image: url(../img/logo-white.png); }
+        background-image: url(../app/img/logo-white.png); }
       .accomodation .block_35 h3, .accomodation .block_35 h2, .accomodation .block_35 p {
         color: #fff; }
     .accomodation .block_50 {
@@ -378,7 +378,7 @@ header {
       padding: 0;
       width: 100%; }
   .service .block_40 {
-    background-image: url(../img/7.jpg); }
+    background-image: url(../app/img/7.jpg); }
   @media (max-width: 1400px) {
     .service .block_60 {
       width: 100%;
@@ -405,7 +405,7 @@ header {
 .contact {
   height: 800px; }
   .contact .block_25 {
-    background-image: url(../img/8.jpg); }
+    background-image: url(../app/img/8.jpg); }
     .contact .block_25 .content .logo {
       margin-bottom: 20px; }
     .contact .block_25 .content h2 {
@@ -471,7 +471,7 @@ header {
               border-radius: 5px;
       border: 1px solid #590c0c; }
     .contact .block_75 .checkbox:not(checked) + label:after {
-      content: url("../img/check.png");
+      content: url("../app/img/check.png");
       height: 20px;
       width: 20px;
       position: absolute;
@@ -500,7 +500,7 @@ header {
   height: 100%;
   padding: 50px 0;
   text-align: center;
-  background-image: url(../img/9.jpg);
+  background-image: url(../app/img/9.jpg);
   z-index: 0; }
   .bottom .logo {
     margin-bottom: 30px; }
@@ -517,7 +517,7 @@ footer {
   text-align: center; }
   footer .footer__contacts {
     padding-top: 80px;
-    background-image: url(../img/10.jpg);
+    background-image: url(../app/img/10.jpg);
     position: relative;
     -webkit-filter: grayscale(50%);
             filter: grayscale(50%);
