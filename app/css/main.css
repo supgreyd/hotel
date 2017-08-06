@@ -299,7 +299,6 @@ header {
 
 .rooms {
   height: 800px;
-  background-color: #EEEEEE;
   text-align: center;
   position: relative; }
   .rooms .logo {
@@ -584,9 +583,10 @@ footer {
     footer .footer__credit {
       height: initial; } }
 
-html {
+html, body {
   font-size: 0;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden; }
 
 * {
   -webkit-box-sizing: border-box;
